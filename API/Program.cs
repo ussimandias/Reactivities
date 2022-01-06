@@ -11,12 +11,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
 // Creating the database
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Configure the service for the server
 builder.Services.AddDbContext<DataContext>(x => x.UseSqlite(connectionString));
+
+
+//CORS Policy
+var  MyAllowSpecificOrigins = "CorsPolicy";
+
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(name: MyAllowSpecificOrigins, policy =>
+    {
+        policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
+    });
+});
 
 var app = builder.Build();
 
@@ -44,7 +55,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
 app.UseHttpsRedirection();
+
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
