@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "j0Rs8yqhw7ybCBHmJLxHS/8XSlzpNh8+ioVggCS0AyRQBPTiLGRHmkfi8ZXgGtPOuHvQCxWTVhm8PCM7t28yDw==",
+  "dgSpecHash": "j3uXVNT3FtczrUe9NxJmE/jxqiD3hQSchC2+IlVnBl8pIl6DxpJ7VicE/lMulIdX6j5qnlkZ86RowMQaKKgnug==",
   "success": true,
   "projectFilePath": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/usmantarfa/.nuget/packages/automapper/11.0.0/automapper.11.0.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.data.sqlite.core/6.0.0/microsoft.data.sqlite.core.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.entityframeworkcore/6.0.0/microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.0/microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
