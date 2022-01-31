@@ -3,6 +3,7 @@ import axios from 'axios';
 import { Container, Header, List } from 'semantic-ui-react';
 import { Activity } from '../models/activity';
 import Navbar from './NavBar';
+import ActivityDashBoard from '../../features/activities/dashboard/ActivitiesDashboard';
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
@@ -20,11 +21,7 @@ function App() {
     <>
       <Navbar />
       <Container style={{ marginTop: '7em' }}>
-        <List>
-          {activities.map((activity) => (
-            <List.Item key={activity.id}>{activity.title}</List.Item>
-          ))}
-        </List>
+        <ActivityDashBoard activities={activities} />
       </Container>
     </>
   );
