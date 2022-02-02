@@ -10,6 +10,7 @@ function App() {
   const [selectedActivity, setSelectedActivity] = useState<
     Activity | undefined
   >(undefined);
+  const [editMode, setEditMode] = useState(false);
 
   useEffect(() => {
     axios
@@ -28,15 +29,27 @@ function App() {
     setSelectedActivity(undefined);
   }
 
+  function handleFormOpen(id?: string) {
+    id ? handleSelectActivity(id) : handleCancelActivity();
+    setEditMode(true);
+  }
+
+  function handleFormClose() {
+    setEditMode(false);
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar openForm={handleFormOpen} />
       <Container style={{ marginTop: '7em' }}>
         <ActivityDashBoard
           activities={activities}
           selectedActivity={selectedActivity}
           selectActivity={handleSelectActivity}
           cancelSelectActivity={handleCancelActivity}
+          editMode={editMode}
+          openForm={handleFormOpen}
+          closeForm={handleFormClose}
         />
       </Container>
     </>
