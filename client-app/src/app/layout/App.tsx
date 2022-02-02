@@ -5,6 +5,7 @@ import Navbar from './NavBar';
 import ActivityDashBoard from '../../features/activities/dashboard/ActivitiesDashboard';
 import { v4 as uuid } from 'uuid';
 import agent from '../api/agent';
+import LoadingComponent from './LoadingComponent';
 
 function App() {
   const [activities, setActivities] = useState<Activity[]>([]);
@@ -12,6 +13,7 @@ function App() {
     Activity | undefined
   >(undefined);
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     agent.Activities.list().then((response) => {
@@ -22,6 +24,7 @@ function App() {
       });
       console.log(response);
       setActivities(activities);
+      setLoading(false);
     });
   }, []);
 
@@ -57,6 +60,7 @@ function App() {
     setActivities([...activities.filter((x) => x.id !== id)]);
   }
 
+  if (loading) return <LoadingComponent content='Loading app' />;
   return (
     <>
       <Navbar openForm={handleFormOpen} />
