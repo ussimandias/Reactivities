@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Container } from 'semantic-ui-react';
+import { useEffect, useState } from 'react';
+import { Container } from 'semantic-ui-react';
 import { Activity } from '../models/activity';
 import Navbar from './NavBar';
 import ActivityDashBoard from '../../features/activities/dashboard/ActivitiesDashboard';
@@ -17,21 +17,11 @@ function App() {
     Activity | undefined
   >(undefined);
   const [editMode, setEditMode] = useState(false);
-  const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
-    agent.Activities.list().then((response) => {
-      let activities: Activity[] = [];
-      response.forEach((activity) => {
-        activity.date = activity.date.split('T')[0];
-        activities.push(activity);
-      });
-      console.log(response);
-      setActivities(activities);
-      setLoading(false);
-    });
-  }, []);
+    activityStore.loadingActivities();
+  }, [activityStore]);
 
   function handleSelectActivity(id: string) {
     setSelectedActivity(activities.find((x) => x.id === id));
@@ -81,20 +71,14 @@ function App() {
     });
   }
 
-  if (loading) return <LoadingComponent content='Loading app' />;
+  if (activityStore.loadingInitial)
+    return <LoadingComponent content='Loading app' />;
   return (
     <>
       <Navbar openForm={handleFormOpen} />
       <Container style={{ marginTop: '7em' }}>
-        <h2>{activityStore.title}</h2>
-        <Button
-          content='Add Exclamation'
-          positive
-          onClick={activityStore.setTitle}
-        />
-
         <ActivityDashBoard
-          activities={activities}
+          activities={activityStore.activities}
           selectedActivity={selectedActivity}
           selectActivity={handleSelectActivity}
           cancelSelectActivity={handleCancelActivity}
