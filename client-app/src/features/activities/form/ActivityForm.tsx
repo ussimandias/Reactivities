@@ -5,6 +5,7 @@ import { useStore } from '../../../app/stores/store';
 
 export default observer(function ActivityForm() {
   const { activityStore } = useStore();
+
   const {
     selectedActivity,
     closeForm,
@@ -12,6 +13,7 @@ export default observer(function ActivityForm() {
     updateActivity,
     loading,
   } = activityStore;
+
   const initialState = selectedActivity ?? {
     id: '',
     title: '',

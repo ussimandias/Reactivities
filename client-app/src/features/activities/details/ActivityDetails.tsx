@@ -4,6 +4,7 @@ import { useStore } from '../../../app/stores/store';
 
 export default function ActivityDetails() {
   const { activityStore } = useStore();
+
   const {
     selectedActivity: activity,
     openForm,
