@@ -22,7 +22,7 @@ public class Delete
         {
             var activity = await dataContext.Activities.FindAsync(request.Id);
 
-            if(activity ==  null) return null;
+            // if(activity ==  null) return null;
 
             dataContext.Remove(activity);
 
