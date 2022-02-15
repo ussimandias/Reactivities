@@ -17,7 +17,7 @@ public class List
 
         public async Task<Result<List<Activity>>> Handle(Query request, CancellationToken cancellationToken)
         {
-            return Result<List<Activity>>.Sucess(await context.Activities.ToListAsync(cancellationToken));
+            return Result<List<Activity>>.Success(await context.Activities.ToListAsync(cancellationToken));
         }
 
     }

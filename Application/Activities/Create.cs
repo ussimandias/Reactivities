@@ -37,7 +37,7 @@ public class Create
             {
                 return Result<Unit>.Failure("Failed to create activity");
             }
-            return Result<Unit>.Sucess(Unit.Value);
+            return Result<Unit>.Success(Unit.Value);
         }
     }
 }

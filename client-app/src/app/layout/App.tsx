@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { Container } from 'semantic-ui-react';
 import Navbar from './NavBar';
 import ActivityDashBoard from '../../features/activities/dashboard/ActivitiesDashboard';

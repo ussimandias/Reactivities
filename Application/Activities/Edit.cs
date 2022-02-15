@@ -6,7 +6,7 @@ using Persistence;
 
 public class Edit
 {
-    public class Command : IRequest
+    public class Command : IRequest<Result<Unit>>
     {
         public Activity Activity { get; set; }
     }
@@ -19,7 +19,7 @@ public class Edit
         }
     }
 
-    public class Handler : IRequestHandler<Command>
+    public class Handler : IRequestHandler<Command, Result<Unit>>
     {
         private readonly DataContext dataContext;
         private readonly IMapper mapper;
@@ -30,16 +30,19 @@ public class Edit
             this.dataContext = dataContext;
         }
 
-        public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+        public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
         {
             var activity = await dataContext.Activities.FindAsync(request.Activity.Id);
+            if(activity == null) return null;
 
             //activity.Title = request.Activity.Title ?? activity.Title;
             mapper.Map(request.Activity, activity);
 
-            await dataContext.SaveChangesAsync();
+            var result = await dataContext.SaveChangesAsync() > 0;
 
-            return Unit.Value;
+            if(!result) return Result<Unit>.Failure("Failed to update activity");
+
+            return Result<Unit>.Success(Unit.Value);
         }
     }
 }

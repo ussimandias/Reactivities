@@ -20,7 +20,7 @@ public class Details
         public async Task<Result<Activity>> Handle(Query request, CancellationToken cancellationToken)
         {
             var activity = await context.Activities.FindAsync(request.Id);
-            return Result<Activity>.Sucess(activity);
+            return Result<Activity>.Success(activity);
         }
     }
 }
