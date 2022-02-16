@@ -10,16 +10,17 @@ export default function ActivityListItem({ activity }: Props) {
   return (
     <Segment.Group>
       <Segment>
-        <Item>
-          <Item.Image size='tiny' circular src='/assets/user.png'>
+        <Item.Group>
+          <Item>
+            <Item.Image size='tiny' circular src='/assets/user.png' />
             <Item.Content>
               <Item.Header as={Link} to={`/activities/${activity.id}`}>
                 {activity.title}
               </Item.Header>
               <Item.Description>Hosted by Cleveland</Item.Description>
             </Item.Content>
-          </Item.Image>
-        </Item>
+          </Item>
+        </Item.Group>
       </Segment>
       <Segment>
         <span>
