@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+yZ2npX4wYSmi2cBI41OQPLhPI/RxOotruAUaK1MqO/IGrAgVoS2YQszn4v0SeQ4tqvh6M8LXNyCw8h/3xVVvw==",
+  "dgSpecHash": "FsbyeVe6Wv8nKHvvcQcE+xRhxCMclc1Z86K5AvL6Y2i5z7T69L/SUvaokgxM0K1uDDN4IYzeIJcz1J8J466i/A==",
   "success": true,
   "projectFilePath": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,9 @@
     "/Users/usmantarfa/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.extensions.webencoders/2.2.0/microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.15.1/microsoft.identitymodel.jsonwebtokens.6.15.1.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.logging/6.15.1/microsoft.identitymodel.logging.6.15.1.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.tokens/6.15.1/microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
@@ -76,6 +79,7 @@
     "/Users/usmantarfa/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/system.identitymodel.tokens.jwt/6.15.1/system.identitymodel.tokens.jwt.6.15.1.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/system.security.accesscontrol/4.5.0/system.security.accesscontrol.4.5.0.nupkg.sha512",

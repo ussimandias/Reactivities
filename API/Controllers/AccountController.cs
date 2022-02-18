@@ -7,8 +7,10 @@ public class AccountController : ControllerBase
 {
         private readonly UserManager<AppUser> userManager;
         private readonly SignInManager<AppUser> signInManager;
-    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+        private readonly TokenService tokenService;
+    public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, TokenService tokenService)
     {
+            this.tokenService = tokenService;
             this.signInManager = signInManager;
             this.userManager = userManager;
     }
@@ -28,7 +30,7 @@ public class AccountController : ControllerBase
             {
                 DisplayName = user.DisplayName,
                 Image = null,
-                Token = "This will be a token",
+                Token = tokenService.CreateToken(user),
                 Username = user.UserName
             };
         }

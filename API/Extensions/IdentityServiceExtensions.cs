@@ -14,6 +14,7 @@ public static class IdentityServiceExtentions
         .AddSignInManager<SignInManager<AppUser>>();
         
         services.AddAuthentication();
+        services.AddScoped<TokenService>();
 
         return services;
     }
