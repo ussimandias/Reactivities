@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FsbyeVe6Wv8nKHvvcQcE+xRhxCMclc1Z86K5AvL6Y2i5z7T69L/SUvaokgxM0K1uDDN4IYzeIJcz1J8J466i/A==",
+  "dgSpecHash": "3JVMVa1zAOaOt5EJ/QSI8GrFjQtvDvaHkcVGuoNNFyRQFw7YX/BjX3s/DGbPwk8/3cckDfAEUi3vpJP+Ts7W1w==",
   "success": true,
   "projectFilePath": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/API.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.2/microsoft.aspnetcore.authentication.jwtbearer.6.0.2.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.0/microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.0/microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.aspnetcore.dataprotection/2.2.0/microsoft.aspnetcore.dataprotection.2.2.0.nupkg.sha512",
@@ -63,6 +64,8 @@
     "/Users/usmantarfa/.nuget/packages/microsoft.extensions.webencoders/2.2.0/microsoft.extensions.webencoders.2.2.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.15.1/microsoft.identitymodel.jsonwebtokens.6.15.1.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.logging/6.15.1/microsoft.identitymodel.logging.6.15.1.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.identitymodel.tokens/6.15.1/microsoft.identitymodel.tokens.6.15.1.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.net.http.headers/2.2.0/microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "/Users/usmantarfa/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
