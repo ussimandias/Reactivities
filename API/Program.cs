@@ -2,6 +2,7 @@ using Persistence;
 using Microsoft.EntityFrameworkCore;
 using MediatR;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,8 +53,9 @@ try
 {
      // Get hold of the data context for Persistence
     var context = services.GetRequiredService<DataContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
     await context.Database.MigrateAsync();
-    await Seed.SeedData(context);
+    await Seed.SeedData(context, userManager);
 }
 catch (Exception ex)
 {
