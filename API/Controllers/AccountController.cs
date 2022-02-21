@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -29,13 +30,7 @@ public class AccountController : ControllerBase
 
         if(result.Succeeded)
         {
-            return new UserDto
-            {
-                DisplayName = user.DisplayName,
-                Image = null,
-                Token = tokenService.CreateToken(user),
-                Username = user.UserName
-            };
+            return CreateUserObject(user);
         }
 
         return Unauthorized();
@@ -64,15 +59,29 @@ public class AccountController : ControllerBase
 
         if(result.Succeeded)
         {
-            return new UserDto
+            return CreateUserObject(user);
+        }
+
+        return BadRequest("Problem registering user");
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<UserDto>> GetCurrentUser()
+    {
+        var user = await userManager.FindByEmailAsync(User.FindFirstValue(ClaimTypes.Email));
+
+        return CreateUserObject(user);
+        
+    }
+
+    private UserDto CreateUserObject(AppUser user)
+    {
+        return new UserDto
             {
-                 DisplayName = registerDto.DisplayName,
+                 DisplayName = user.DisplayName,
                  Image = null,
                  Token = tokenService.CreateToken(user),
                  Username = user.UserName
             };
-        }
-
-        return BadRequest("Problem registering user");
     }
 }
