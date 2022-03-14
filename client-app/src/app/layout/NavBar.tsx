@@ -20,7 +20,7 @@ export default observer(function Navbar() {
         </Menu.Item>
         <Menu.Item as={NavLink} to='/activities' name='Activities' />
         <Menu.Item as={NavLink} to='/errors' name='Errors' />
-        <Menu.Item position='right'>
+        <Menu.Item>
           <Button
             as={NavLink}
             to='/createActivity'
@@ -28,7 +28,7 @@ export default observer(function Navbar() {
             content='Create Activity'
           />
         </Menu.Item>
-        <Menu.Item>
+        <Menu.Item position='right'>
           <Image
             src={user?.image || '/assets/user.png'}
             avatar
