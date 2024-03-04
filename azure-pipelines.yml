@@ -10,7 +10,7 @@ trigger:
       - development
 
 pool:
-  vmImage: 'macOS-latest'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - task: NodeTool@0
