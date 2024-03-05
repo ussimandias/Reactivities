@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/usmantarfa/Documents/Software Development/Reactivities/Persistence/Persistence.csproj": {}
+    "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Persistence/Persistence.csproj": {}
   },
   "projects": {
-    "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj": {
+    "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj",
+        "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj",
         "packagesPath": "/Users/usmantarfa/.nuget/packages/",
-        "outputPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/obj/",
+        "outputPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/usmantarfa/.nuget/NuGet/NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "/Users/usmantarfa/Documents/Software Development/Reactivities/Persistence/Persistence.csproj": {
+    "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/usmantarfa/Documents/Software Development/Reactivities/Persistence/Persistence.csproj",
+        "projectUniqueName": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Persistence/Persistence.csproj",
+        "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Persistence/Persistence.csproj",
         "packagesPath": "/Users/usmantarfa/.nuget/packages/",
-        "outputPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Persistence/obj/",
+        "outputPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/usmantarfa/.nuget/NuGet/NuGet.Config"
@@ -84,8 +84,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj": {
-                "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj"
+              "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj": {
+                "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj"
               }
             }
           }

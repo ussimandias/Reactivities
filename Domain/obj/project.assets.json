@@ -740,11 +740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj",
+      "projectUniqueName": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/Domain.csproj",
+      "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/Domain.csproj",
       "packagesPath": "/Users/usmantarfa/.nuget/packages/",
-      "outputPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Domain/obj/",
+      "outputPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/usmantarfa/.nuget/NuGet/NuGet.Config"
