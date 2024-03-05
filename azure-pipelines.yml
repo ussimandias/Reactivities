@@ -17,7 +17,7 @@ variables:
   directory: react-azure-demo
   stage: development
   serviceConnection: REACTIVITIES_AZURE_DEMO
-  appServiceName: reactazuredemo
+  appServiceName: reactivitiesazuredemo
  
 steps:
 - task: NodeTool@0
