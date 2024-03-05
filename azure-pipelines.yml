@@ -11,7 +11,7 @@ trigger:
       - dev
 
 pool:
-  vmImage: 'macOS-latest'
+  vmImage: 'windows-latest'
 # Set variables
 variables:
   directory: react-azure-demo
