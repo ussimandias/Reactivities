@@ -1791,11 +1791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/API.csproj",
+      "projectUniqueName": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/API/API.csproj",
       "projectName": "API",
-      "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/API.csproj",
+      "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/API/API.csproj",
       "packagesPath": "/Users/usmantarfa/.nuget/packages/",
-      "outputPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/API/obj/",
+      "outputPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/usmantarfa/.nuget/NuGet/NuGet.Config"
@@ -1810,8 +1810,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/usmantarfa/Documents/Software Development/Reactivities/Application/Application.csproj": {
-              "projectPath": "/Users/usmantarfa/Documents/Software Development/Reactivities/Application/Application.csproj"
+            "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Application/Application.csproj": {
+              "projectPath": "/Users/usmantarfa/Documents/Documents - Usman’s Mac mini/Software Development/Reactivities/Application/Application.csproj"
             }
           }
         }
