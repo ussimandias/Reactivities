@@ -8,11 +8,11 @@ import ActivityList from './ActivityList';
 
 export default observer(function ActivityDashBoard() {
   const { activityStore } = useStore();
-  const { loadingActivities, activityRegistry } = activityStore;
+  const { loadActivities, activityRegistry } = activityStore;
 
   useEffect(() => {
-    if (activityRegistry.size <= 1) loadingActivities();
-  }, [activityRegistry.size, loadingActivities]);
+    if (activityRegistry.size <= 1) loadActivities();
+  }, [activityRegistry.size, loadActivities]);
 
   if (activityStore.loadingInitial)
     return <LoadingComponent content='Loading activities...' />;

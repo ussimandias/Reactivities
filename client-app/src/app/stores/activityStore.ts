@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { makeAutoObservable, runInAction } from 'mobx';
 import agent from '../api/agent';
 import { Activity } from '../models/activity';
@@ -33,7 +32,7 @@ export default class ActivityStore {
     );
   }
 
-  loadingActivities = async () => {
+  loadActivities = async () => {
     this.loadingInitial = true;
     try {
       const activities = await agent.Activities.list();
@@ -133,16 +132,4 @@ export default class ActivityStore {
       });
     }
   };
-=======
-import { makeObservable, observable } from 'mobx';
-
-export default class ActivityStore {
-  title = 'Hello from MobX!';
-
-  constructor() {
-    makeObservable(this, {
-      title: observable,
-    });
-  }
->>>>>>> main
 }
